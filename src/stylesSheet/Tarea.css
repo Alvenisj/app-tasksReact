@@ -1,0 +1,59 @@
+
+.tarea-container { 
+
+    width: 500px;
+    min-height: 65px;
+    background-color: #1b1b32e0;
+    margin: 5px 0;
+    padding: 17px 22px 17px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid rgb(3, 157, 247);
+    cursor: pointer;
+}
+
+/* variacion de colores en las filas de las tareas */
+.tarea-container:nth-child( 3n + 1 ) {
+    background-color: #1b1b32;
+
+}
+
+.tarea-container:nth-child( 3n + 2 ) {
+    background-color: #2a2a40;
+
+}
+.tarea-container:nth-child( 3n + 3 ) {
+    background-color: #3b3b4f;
+
+}
+
+.tarea-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+    border-radius: 5px;
+    background-color: rgba(92, 87, 87, 0.356);
+    text-align: justify;
+
+}
+
+.tarea-icono {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    /* background-color: blue; */
+}
+
+.tarea-container.completada {
+
+    background-color: #2d8b20;
+    text-decoration: line-through;
+
+}
